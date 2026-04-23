@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service & Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --ink: #1a1916;
+      --muted: #6b6860;
+      --accent: #2b2b2b;
+      --rule: #e0ddd8;
+      --tag-bg: #eeecea;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 3.5rem 2rem 3rem;
+      text-align: center;
+    }
+
+    header .eyebrow {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+
+    header .meta {
+      font-size: 0.8rem;
+      opacity: 0.45;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    /* ── Summary box ── */
+    .summary-box {
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--ink);
+      padding: 1.8rem 2rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .summary-box .label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .summary-box p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    /* ── Section ── */
+    section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-number {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1.2rem;
+      line-height: 1.3;
+    }
+
+    p {
+      color: #3a3835;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 1rem 0 1rem 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.4rem;
+      font-size: 0.95rem;
+      color: #3a3835;
+      margin-bottom: 0.5rem;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    /* ── Tag chips ── */
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+
+    .tag {
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.3rem 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Contact box ── */
+    .contact-box {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 2rem 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-box p {
+      color: rgba(247,245,240,0.7);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-box a {
+      color: var(--bg);
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(247,245,240,0.3);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      border-top: 1px solid var(--rule);
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 2.5rem 1.2rem 4rem; }
+      .summary-box { padding: 1.4rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Legal Documentation</p>
+  <h1>Terms of Service<br>&amp; Privacy Policy</h1>
+  <p class="meta">TikTok Analytics App &nbsp;·&nbsp; Effective date: April 23, 2026</p>
+</header>
+
+<main>
+
+  <div class="summary-box">
+    <p class="label">Plain-English Summary</p>
+    <p>
+      This application connects to TikTok solely to retrieve a list of videos posted on our own TikTok profile, along with their aggregate statistics (likes, comments, shares). No personal data from any third party is collected, stored, or shared. Data is used exclusively for internal analytics purposes by our team.
+    </p>
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <p class="section-number">01</p>
+    <h2>Acceptance of Terms</h2>
+    <p>
+      By accessing or using this application (electro-news-insights), you agree to be bound by these Terms of Service ("Terms"). If you do not agree with any part of these Terms, you may not use the App.
+    </p>
+    <p>
+      These Terms apply to all users of the App, including internal team members who access the analytics dashboard.
+    </p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <p class="section-number">02</p>
+    <h2>Description of the Application</h2>
+    <p>
+      The App is an internal analytics tool that connects to the TikTok API using OAuth 2.0 authentication. Its sole purpose is to retrieve, for the authenticated TikTok account belonging to our organization, the following data:
+    </p>
+    <div class="tag-row">
+      <span class="tag">List of published videos</span>
+      <span class="tag">Total like count per video</span>
+      <span class="tag">Total comment count per video</span>
+      <span class="tag">Total share count per video</span>
+    </div>
+    <p>
+      No other data is accessed, stored, or processed. The App does not access follower lists, private messages, user demographics, or any data from accounts other than our own.
+    </p>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <p class="section-number">03</p>
+    <h2>Data Collection &amp; Use</h2>
+    <p>
+      The App collects only aggregate, non-personal statistics related to content published on our own TikTok profile. Specifically:
+    </p>
+    <ul>
+      <li>Video identifiers and publication dates</li>
+      <li>Video titles and descriptions (for identification purposes)</li>
+      <li>Aggregate engagement metrics: total likes, total comments, total shares</li>
+    </ul>
+    <p>
+      This data is used exclusively for internal performance analysis by the analytics team. It is never sold, licensed, shared with, or disclosed to any third party.
+    </p>
+    <p>
+      We do not collect, process, or store any personally identifiable information (PII) about TikTok users who may have interacted with our content.
+    </p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <p class="section-number">04</p>
+    <h2>Data Storage &amp; Retention</h2>
+    <p>
+      Retrieved metrics may be stored in internal databases or spreadsheets accessible only to authorized members of the analytics team. Data is retained for as long as necessary for performance analysis and is deleted upon request or when no longer needed.
+    </p>
+    <p>
+      Access to stored data is restricted by role-based permissions. No data is exposed publicly or to unauthorized personnel.
+    </p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <p class="section-number">05</p>
+    <h2>TikTok API Compliance</h2>
+    <p>
+      This App is built in compliance with the <a href="https://developers.tiktok.com/doc/tiktok-api-developer-terms-of-service" target="_blank" rel="noopener">TikTok API Terms of Service</a>. We commit to:
+    </p>
+    <ul>
+      <li>Using API data solely for the purpose declared in our developer application</li>
+      <li>Not redistributing, selling, or sublicensing TikTok data to any third party</li>
+      <li>Not using the API to access data beyond the authorized scopes</li>
+      <li>Complying with all rate limits and technical constraints imposed by TikTok</li>
+      <li>Promptly addressing any compliance concerns raised by TikTok</li>
+    </ul>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <p class="section-number">06</p>
+    <h2>Privacy Policy</h2>
+    <p>
+      <strong>No personal data is collected.</strong> The App does not collect any information about individual TikTok users — including but not limited to names, usernames, profile pictures, email addresses, device identifiers, IP addresses, or behavioral data.
+    </p>
+    <p>
+      The only account-level data accessed is associated with our own organization's TikTok profile, authenticated via TikTok's official OAuth 2.0 flow. Access tokens obtained through this process are stored securely and never shared externally.
+    </p>
+    <p>
+      We do not use cookies, tracking pixels, or any third-party analytics services within the App.
+    </p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <p class="section-number">07</p>
+    <h2>Security</h2>
+    <p>
+      We implement appropriate technical and organizational measures to protect the data retrieved via the TikTok API, including:
+    </p>
+    <ul>
+      <li>Secure storage of API credentials and access tokens</li>
+      <li>Restricted access to the App and its data (internal team only)</li>
+      <li>Use of HTTPS for all API communications</li>
+    </ul>
+    <p>
+      In the event of a data breach affecting TikTok-related data, we will take immediate corrective action and notify relevant parties as required.
+    </p>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <p class="section-number">08</p>
+    <h2>Limitation of Liability</h2>
+    <p>
+      This App is provided "as is" for internal use only. We make no warranties, express or implied, regarding the accuracy or completeness of data retrieved from TikTok. We are not liable for any disruption to the App caused by changes to TikTok's API or policies.
+    </p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <p class="section-number">09</p>
+    <h2>Changes to These Terms</h2>
+    <p>
+      We reserve the right to update these Terms at any time. The date at the top of this page will reflect the most recent revision. Continued use of the App following any changes constitutes acceptance of the updated Terms.
+    </p>
+  </section>
+
+  <!-- 10 -->
+  <section>
+    <p class="section-number">10</p>
+    <h2>Contact</h2>
+    <p>For any questions regarding these Terms or the App's data practices, please contact us:</p>
+    <div class="contact-box">
+      <p>Email</p>
+      <a href="mailto:paris@electro-news.eu">paris@electro-news.eu</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 &nbsp;·&nbsp; Internal Analytics Application &nbsp;·&nbsp; All rights reserved
+</footer>
+
+</body>
+</html>
