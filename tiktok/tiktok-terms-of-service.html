@@ -27,7 +27,6 @@
       line-height: 1.8;
     }
 
-    /* ── Header ── */
     header {
       background: var(--ink);
       color: var(--bg);
@@ -58,14 +57,12 @@
       letter-spacing: 0.05em;
     }
 
-    /* ── Layout ── */
     main {
       max-width: 780px;
       margin: 0 auto;
       padding: 4rem 2rem 6rem;
     }
 
-    /* ── Summary box ── */
     .summary-box {
       background: var(--surface);
       border: 1px solid var(--rule);
@@ -89,7 +86,6 @@
       line-height: 1.75;
     }
 
-    /* ── Section ── */
     section {
       margin-bottom: 3rem;
       padding-bottom: 3rem;
@@ -144,7 +140,6 @@
       font-weight: 300;
     }
 
-    /* ── Tag chips ── */
     .tag-row {
       display: flex;
       flex-wrap: wrap;
@@ -161,7 +156,6 @@
       letter-spacing: 0.05em;
     }
 
-    /* ── Contact box ── */
     .contact-box {
       background: var(--ink);
       color: var(--bg);
@@ -182,7 +176,6 @@
       border-bottom: 1px solid rgba(247,245,240,0.3);
     }
 
-    /* ── Footer ── */
     footer {
       text-align: center;
       padding: 2rem;
@@ -191,6 +184,8 @@
       letter-spacing: 0.05em;
       border-top: 1px solid var(--rule);
     }
+
+    a { color: var(--accent); }
 
     @media (max-width: 600px) {
       main { padding: 2.5rem 1.2rem 4rem; }
@@ -203,15 +198,18 @@
 <header>
   <p class="eyebrow">Legal Documentation</p>
   <h1>Terms of Service<br>&amp; Privacy Policy</h1>
-  <p class="meta">TikTok Analytics App &nbsp;·&nbsp; Effective date: April 23, 2026</p>
+  <!-- FIX #8: Added version number alongside effective date -->
+  <!-- FIX #1: Unified app name as electro-news-insights -->
+  <p class="meta">electro-news-insights &nbsp;·&nbsp; Effective date: April 23, 2026 &nbsp;·&nbsp; v1.0</p>
 </header>
 
 <main>
 
   <div class="summary-box">
     <p class="label">Plain-English Summary</p>
+    <!-- FIX #5: Rewritten in user-facing language per TikTok description guidelines -->
     <p>
-      This application connects to TikTok solely to retrieve a list of videos posted on our own TikTok profile, along with their aggregate statistics (likes, comments, shares). No personal data from any third party is collected, stored, or shared. Data is used exclusively for internal analytics purposes by our team.
+      electro-news-insights helps media teams track the performance of their TikTok content. It connects to TikTok via the official API to display video engagement metrics — likes, comments, and shares — for content published on your own profile. No personal data from any third party is collected, stored, or shared.
     </p>
   </div>
 
@@ -220,10 +218,15 @@
     <p class="section-number">01</p>
     <h2>Acceptance of Terms</h2>
     <p>
-      By accessing or using this application (electro-news-insights), you agree to be bound by these Terms of Service ("Terms"). If you do not agree with any part of these Terms, you may not use the App.
+      <!-- FIX #1: Unified app name -->
+      By accessing or using <strong>electro-news-insights</strong>, you agree to be bound by these Terms of Service ("Terms"). If you do not agree with any part of these Terms, you may not use the App.
     </p>
     <p>
-      These Terms apply to all users of the App, including internal team members who access the analytics dashboard.
+      These Terms apply to all users of the App, including team members who access the analytics dashboard through their authorized credentials.
+    </p>
+    <!-- FIX #3: Public website URL -->
+    <p>
+      Our official website is available at <a href="https://electro-news.eu" target="_blank" rel="noopener">https://electro-news.eu</a>, where both this Terms of Service and the Privacy Policy are permanently accessible.
     </p>
   </section>
 
@@ -231,17 +234,22 @@
   <section>
     <p class="section-number">02</p>
     <h2>Description of the Application</h2>
+    <!-- FIX #5: Rewritten in user-facing language, not purely technical/internal -->
     <p>
-      The App is an internal analytics tool that connects to the TikTok API using OAuth 2.0 authentication. Its sole purpose is to retrieve, for the authenticated TikTok account belonging to our organization, the following data:
+      electro-news-insights is a content analytics tool designed for media and editorial teams. It allows authorized users to monitor the performance of their organization's TikTok content in one place, without leaving their workflow.
     </p>
+    <p>
+      The App connects to the TikTok API using OAuth 2.0 authentication. It accesses, for the authenticated TikTok account belonging to our organization, the following data using the scopes below:
+    </p>
+    <!-- FIX #4: Named specific OAuth scopes -->
     <div class="tag-row">
-      <span class="tag">List of published videos</span>
-      <span class="tag">Total like count per video</span>
-      <span class="tag">Total comment count per video</span>
-      <span class="tag">Total share count per video</span>
+      <span class="tag">video.list – list of published videos</span>
+      <span class="tag">video.list.stats – total like count per video</span>
+      <span class="tag">video.list.stats – total comment count per video</span>
+      <span class="tag">video.list.stats – total share count per video</span>
     </div>
     <p>
-      No other data is accessed, stored, or processed. The App does not access follower lists, private messages, user demographics, or any data from accounts other than our own.
+      Only the minimum scopes necessary to deliver the app's core functionality are requested. No other data is accessed, stored, or processed. The App does not access follower lists, private messages, user demographics, or any data from accounts other than our own.
     </p>
   </section>
 
@@ -258,7 +266,8 @@
       <li>Aggregate engagement metrics: total likes, total comments, total shares</li>
     </ul>
     <p>
-      This data is used exclusively for internal performance analysis by the analytics team. It is never sold, licensed, shared with, or disclosed to any third party.
+      <!-- FIX #2: Removed "internal only" framing -->
+      This data is used exclusively for content performance analysis by our editorial team. It is never sold, licensed, shared with, or disclosed to any third party.
     </p>
     <p>
       We do not collect, process, or store any personally identifiable information (PII) about TikTok users who may have interacted with our content.
@@ -270,7 +279,7 @@
     <p class="section-number">04</p>
     <h2>Data Storage &amp; Retention</h2>
     <p>
-      Retrieved metrics may be stored in internal databases or spreadsheets accessible only to authorized members of the analytics team. Data is retained for as long as necessary for performance analysis and is deleted upon request or when no longer needed.
+      Retrieved metrics may be stored in secure databases or spreadsheets accessible only to authorized members of the analytics team. Data is retained for as long as necessary for performance analysis and is deleted upon request or when no longer needed.
     </p>
     <p>
       Access to stored data is restricted by role-based permissions. No data is exposed publicly or to unauthorized personnel.
@@ -282,7 +291,7 @@
     <p class="section-number">05</p>
     <h2>TikTok API Compliance</h2>
     <p>
-      This App is built in compliance with the <a href="https://developers.tiktok.com/doc/tiktok-api-developer-terms-of-service" target="_blank" rel="noopener">TikTok API Terms of Service</a>. We commit to:
+      This App is built in compliance with the <a href="https://developers.tiktok.com/doc/tiktok-api-developer-terms-of-service" target="_blank" rel="noopener">TikTok API Developer Terms of Service</a>. We commit to:
     </p>
     <ul>
       <li>Using API data solely for the purpose declared in our developer application</li>
@@ -306,6 +315,10 @@
     <p>
       We do not use cookies, tracking pixels, or any third-party analytics services within the App.
     </p>
+    <!-- FIX #9 / cohérence: GDPR response time also mentioned in ToS -->
+    <p>
+      If you believe we hold any information related to you and wish to exercise your rights under applicable data protection laws (including GDPR for EU residents), please contact us at the address below. We will respond to all legitimate requests within 30 days.
+    </p>
   </section>
 
   <!-- 7 -->
@@ -317,11 +330,12 @@
     </p>
     <ul>
       <li>Secure storage of API credentials and access tokens</li>
-      <li>Restricted access to the App and its data (internal team only)</li>
+      <li>Restricted access to the App and its data (authorized team members only)</li>
       <li>Use of HTTPS for all API communications</li>
     </ul>
+    <!-- FIX #8 (ToS): Aligned breach notification with PP -->
     <p>
-      In the event of a data breach affecting TikTok-related data, we will take immediate corrective action and notify relevant parties as required.
+      In the event of a security incident or data breach affecting TikTok-related data, we will take immediate corrective action, notify TikTok as required under the TikTok API Developer Terms of Service, and inform any affected parties in accordance with applicable data protection regulations (including GDPR where applicable) within 72 hours of becoming aware of the breach.
     </p>
   </section>
 
@@ -330,7 +344,7 @@
     <p class="section-number">08</p>
     <h2>Limitation of Liability</h2>
     <p>
-      This App is provided "as is" for internal use only. We make no warranties, express or implied, regarding the accuracy or completeness of data retrieved from TikTok. We are not liable for any disruption to the App caused by changes to TikTok's API or policies.
+      This App is provided "as is." We make no warranties, express or implied, regarding the accuracy or completeness of data retrieved from TikTok. We are not liable for any disruption to the App caused by changes to TikTok's API or policies.
     </p>
   </section>
 
@@ -339,7 +353,7 @@
     <p class="section-number">09</p>
     <h2>Changes to These Terms</h2>
     <p>
-      We reserve the right to update these Terms at any time. The date at the top of this page will reflect the most recent revision. Continued use of the App following any changes constitutes acceptance of the updated Terms.
+      We reserve the right to update these Terms at any time. The effective date and version number at the top of this page will reflect the most recent revision. Continued use of the App following any changes constitutes acceptance of the updated Terms.
     </p>
   </section>
 
@@ -349,7 +363,10 @@
     <h2>Contact</h2>
     <p>For any questions regarding these Terms or the App's data practices, please contact us:</p>
     <div class="contact-box">
-      <p>Email</p>
+      <!-- FIX #3: Added public website in contact block -->
+      <p>Website</p>
+      <a href="https://electro-news.eu" target="_blank" rel="noopener">https://electro-news.eu</a>
+      <p style="margin-top:1rem;">Email</p>
       <a href="mailto:paris@electro-news.eu">paris@electro-news.eu</a>
     </div>
   </section>
@@ -357,7 +374,9 @@
 </main>
 
 <footer>
-  © 2026 &nbsp;·&nbsp; Internal Analytics Application &nbsp;·&nbsp; All rights reserved
+  <!-- FIX #1: Unified app name -->
+  © 2026 &nbsp;·&nbsp; electro-news-insights &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp;
+  <a href="https://electro-news.eu" target="_blank" rel="noopener" style="color:inherit;">electro-news.eu</a>
 </footer>
 
 </body>
