@@ -3,367 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Service & Privacy Policy</title>
+  <title>Terms of Service</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #f7f5f0;
-      --surface: #ffffff;
-      --ink: #1a1916;
-      --muted: #6b6860;
-      --accent: #2b2b2b;
-      --rule: #e0ddd8;
-      --tag-bg: #eeecea;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--ink);
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    header {
-      background: var(--ink);
-      color: var(--bg);
-      padding: 3.5rem 2rem 3rem;
-      text-align: center;
-    }
-
-    header .eyebrow {
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      opacity: 0.5;
-      margin-bottom: 1rem;
-    }
-
-    header h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 400;
-      line-height: 1.15;
-      margin-bottom: 1.2rem;
-    }
-
-    header .meta {
-      font-size: 0.8rem;
-      opacity: 0.45;
-      letter-spacing: 0.05em;
-    }
-
-    main {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 4rem 2rem 6rem;
-    }
-
-    .summary-box {
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      border-left: 3px solid var(--ink);
-      padding: 1.8rem 2rem;
-      margin-bottom: 3.5rem;
-    }
-
-    .summary-box .label {
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.9rem;
-    }
-
-    .summary-box p {
-      font-size: 0.95rem;
-      color: var(--muted);
-      line-height: 1.75;
-    }
-
-    section {
-      margin-bottom: 3rem;
-      padding-bottom: 3rem;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    section:last-of-type {
-      border-bottom: none;
-    }
-
-    .section-number {
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 1.2rem;
-      line-height: 1.3;
-    }
-
-    p {
-      color: #3a3835;
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-    }
-
-    ul {
-      list-style: none;
-      margin: 1rem 0 1rem 0;
-    }
-
-    ul li {
-      position: relative;
-      padding-left: 1.4rem;
-      font-size: 0.95rem;
-      color: #3a3835;
-      margin-bottom: 0.5rem;
-    }
-
-    ul li::before {
-      content: '—';
-      position: absolute;
-      left: 0;
-      color: var(--muted);
-      font-weight: 300;
-    }
-
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 1rem 0;
-    }
-
-    .tag {
-      background: var(--tag-bg);
-      color: var(--accent);
-      font-size: 0.75rem;
-      font-weight: 500;
-      padding: 0.3rem 0.75rem;
-      letter-spacing: 0.05em;
-    }
-
-    .contact-box {
-      background: var(--ink);
-      color: var(--bg);
-      padding: 2rem 2rem;
-      margin-top: 1.5rem;
-    }
-
-    .contact-box p {
-      color: rgba(247,245,240,0.7);
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .contact-box a {
-      color: var(--bg);
-      font-weight: 500;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(247,245,240,0.3);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.75rem;
-      color: var(--muted);
-      letter-spacing: 0.05em;
-      border-top: 1px solid var(--rule);
-    }
-
-    a { color: var(--accent); }
-
-    @media (max-width: 600px) {
-      main { padding: 2.5rem 1.2rem 4rem; }
-      .summary-box { padding: 1.4rem 1.2rem; }
-    }
+    :root { --bg:#f7f5f0;--surface:#ffffff;--ink:#1a1916;--muted:#6b6860;--accent:#2b2b2b;--rule:#e0ddd8;--tag-bg:#eeecea; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;font-weight:300;font-size:16px;line-height:1.8;}
+    header{background:var(--ink);color:var(--bg);padding:3.5rem 2rem 3rem;text-align:center;}
+    header .eyebrow{font-size:.7rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;opacity:.5;margin-bottom:1rem;}
+    header h1{font-family:'DM Serif Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:400;line-height:1.15;margin-bottom:1.2rem;}
+    header .meta{font-size:.8rem;opacity:.45;letter-spacing:.05em;}
+    main{max-width:780px;margin:0 auto;padding:4rem 2rem 6rem;}
+    .summary-box{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--ink);padding:1.8rem 2rem;margin-bottom:3.5rem;}
+    .summary-box .label{font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.9rem;}
+    .summary-box p{font-size:.95rem;color:var(--muted);line-height:1.75;}
+    section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid var(--rule);}
+    section:last-of-type{border-bottom:none;}
+    .section-number{font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem;}
+    h2{font-family:'DM Serif Display',serif;font-size:1.5rem;font-weight:400;margin-bottom:1.2rem;line-height:1.3;}
+    p{color:#3a3835;margin-bottom:1rem;font-size:.95rem;}
+    ul{list-style:none;margin:1rem 0;}
+    ul li{position:relative;padding-left:1.4rem;font-size:.95rem;color:#3a3835;margin-bottom:.5rem;}
+    ul li::before{content:'—';position:absolute;left:0;color:var(--muted);font-weight:300;}
+    .tag-row{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0;}
+    .tag{background:var(--tag-bg);color:var(--accent);font-size:.75rem;font-weight:500;padding:.3rem .75rem;letter-spacing:.05em;}
+    .contact-box{background:var(--ink);color:var(--bg);padding:2rem;margin-top:1.5rem;}
+    .contact-box p{color:rgba(247,245,240,.7);font-size:.9rem;margin-bottom:.5rem;}
+    .contact-box a{color:var(--bg);font-weight:500;text-decoration:none;border-bottom:1px solid rgba(247,245,240,.3);}
+    footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--muted);letter-spacing:.05em;border-top:1px solid var(--rule);}
+    a{color:var(--accent);}
+    @media(max-width:600px){main{padding:2.5rem 1.2rem 4rem;}.summary-box{padding:1.4rem 1.2rem;}}
   </style>
 </head>
 <body>
 
 <header>
   <p class="eyebrow">Legal Documentation</p>
-  <h1>Terms of Service<br>&amp; Privacy Policy</h1>
-  <!-- FIX #8: Added version number alongside effective date -->
-  <!-- FIX #1: Unified app name as electro-news-insights -->
-  <p class="meta">electro-news-insights &nbsp;·&nbsp; Effective date: April 23, 2026 &nbsp;·&nbsp; v1.0</p>
+  <h1>Terms of Service</h1>
+  <p class="meta">electro-news-insights &nbsp;·&nbsp; Effective date: April 23, 2026 &nbsp;·&nbsp; v2.0</p>
 </header>
 
 <main>
 
   <div class="summary-box">
     <p class="label">Plain-English Summary</p>
-    <!-- FIX #5: Rewritten in user-facing language per TikTok description guidelines -->
-    <p>
-      electro-news-insights helps media teams track the performance of their TikTok content. It connects to TikTok via the official API to display video engagement metrics — likes, comments, and shares — for content published on your own profile. No personal data from any third party is collected, stored, or shared.
-    </p>
+    <p>electro-news-insights is a TikTok analytics platform open to any creator or media organisation. Connect your TikTok account and get a clear view of how your videos perform — likes, comments and shares — all in one place. Your data stays yours. We never share it, sell it, or access anything beyond what you explicitly authorise.</p>
   </div>
 
-  <!-- 1 -->
   <section>
     <p class="section-number">01</p>
     <h2>Acceptance of Terms</h2>
-    <p>
-      <!-- FIX #1: Unified app name -->
-      By accessing or using <strong>electro-news-insights</strong>, you agree to be bound by these Terms of Service ("Terms"). If you do not agree with any part of these Terms, you may not use the App.
-    </p>
-    <p>
-      These Terms apply to all users of the App, including team members who access the analytics dashboard through their authorized credentials.
-    </p>
-    <!-- FIX #3: Public website URL -->
-    <p>
-      Our official website is available at <a href="https://electro-news.eu" target="_blank" rel="noopener">https://electro-news.eu</a>, where both this Terms of Service and the Privacy Policy are permanently accessible.
-    </p>
+    <p>By accessing or using <strong>electro-news-insights</strong> (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree, you may not use the App. These Terms apply to all users who create an account or connect a TikTok account to the App.</p>
+    <p>Our official website, where these Terms and our Privacy Policy are permanently accessible, is <a href="https://electro-news.eu" target="_blank" rel="noopener">https://electro-news.eu</a>.</p>
   </section>
 
-  <!-- 2 -->
   <section>
     <p class="section-number">02</p>
     <h2>Description of the Application</h2>
-    <!-- FIX #5: Rewritten in user-facing language, not purely technical/internal -->
-    <p>
-      electro-news-insights is a content analytics tool designed for media and editorial teams. It allows authorized users to monitor the performance of their organization's TikTok content in one place, without leaving their workflow.
-    </p>
-    <p>
-      The App connects to the TikTok API using OAuth 2.0 authentication. It accesses, for the authenticated TikTok account belonging to our organization, the following data using the scopes below:
-    </p>
-    <!-- FIX #4: Named specific OAuth scopes -->
+    <p>electro-news-insights is a content analytics platform that helps TikTok creators and media teams track the performance of their published videos. Any TikTok user can sign in, connect their account, and immediately see engagement metrics for their content in a clear, unified dashboard.</p>
+    <p>The App connects to TikTok's official API via OAuth 2.0. The following scopes are requested — and only those strictly necessary to deliver the service:</p>
     <div class="tag-row">
-      <span class="tag">video.list – list of published videos</span>
-      <span class="tag">video.list.stats – total like count per video</span>
-      <span class="tag">video.list.stats – total comment count per video</span>
-      <span class="tag">video.list.stats – total share count per video</span>
+      <span class="tag">video.list — list your published videos</span>
+      <span class="tag">video.list.stats — likes, comments &amp; shares per video</span>
     </div>
-    <p>
-      Only the minimum scopes necessary to deliver the app's core functionality are requested. No other data is accessed, stored, or processed. The App does not access follower lists, private messages, user demographics, or any data from accounts other than our own.
-    </p>
+    <p>No other data is accessed, stored, or processed. The App does not access follower lists, private messages, user demographics, or data from any account other than the one you connect.</p>
   </section>
 
-  <!-- 3 -->
   <section>
     <p class="section-number">03</p>
+    <h2>Eligibility &amp; Account</h2>
+    <p>The App is available to any individual or organisation that holds a valid TikTok account. By connecting your TikTok account you confirm that you are authorised to do so and that you are at least 18 years of age.</p>
+    <p>You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account.</p>
+  </section>
+
+  <section>
+    <p class="section-number">04</p>
     <h2>Data Collection &amp; Use</h2>
-    <p>
-      The App collects only aggregate, non-personal statistics related to content published on our own TikTok profile. Specifically:
-    </p>
+    <p>The App retrieves only aggregate, non-personal statistics related to content published on your own TikTok profile:</p>
     <ul>
       <li>Video identifiers and publication dates</li>
       <li>Video titles and descriptions (for identification purposes)</li>
       <li>Aggregate engagement metrics: total likes, total comments, total shares</li>
     </ul>
-    <p>
-      <!-- FIX #2: Removed "internal only" framing -->
-      This data is used exclusively for content performance analysis by our editorial team. It is never sold, licensed, shared with, or disclosed to any third party.
-    </p>
-    <p>
-      We do not collect, process, or store any personally identifiable information (PII) about TikTok users who may have interacted with our content.
-    </p>
+    <p>This data is used exclusively to populate your personal analytics dashboard and generate performance charts. It is never sold, licensed, shared with, or disclosed to any third party. We do not collect or store any personally identifiable information about TikTok users who have interacted with your content.</p>
   </section>
 
-  <!-- 4 -->
-  <section>
-    <p class="section-number">04</p>
-    <h2>Data Storage &amp; Retention</h2>
-    <p>
-      Retrieved metrics may be stored in secure databases or spreadsheets accessible only to authorized members of the analytics team. Data is retained for as long as necessary for performance analysis and is deleted upon request or when no longer needed.
-    </p>
-    <p>
-      Access to stored data is restricted by role-based permissions. No data is exposed publicly or to unauthorized personnel.
-    </p>
-  </section>
-
-  <!-- 5 -->
   <section>
     <p class="section-number">05</p>
+    <h2>Data Storage &amp; Retention</h2>
+    <p>Metrics retrieved from the TikTok API are stored in our secure infrastructure, accessible only to authorised personnel. Data is retained for as long as your account is active.</p>
+    <p>You may request deletion of your account and all associated data at any time. Upon account deletion or TikTok account disconnection, all associated data and access tokens are permanently deleted from our systems within 30 days.</p>
+  </section>
+
+  <section>
+    <p class="section-number">06</p>
     <h2>TikTok API Compliance</h2>
-    <p>
-      This App is built in compliance with the <a href="https://developers.tiktok.com/doc/tiktok-api-developer-terms-of-service" target="_blank" rel="noopener">TikTok API Developer Terms of Service</a>. We commit to:
-    </p>
+    <p>This App is built in compliance with the <a href="https://developers.tiktok.com/doc/tiktok-api-developer-terms-of-service" target="_blank" rel="noopener">TikTok API Developer Terms of Service</a>. We commit to:</p>
     <ul>
-      <li>Using API data solely for the purpose declared in our developer application</li>
+      <li>Using API data solely for the declared purpose of this application</li>
       <li>Not redistributing, selling, or sublicensing TikTok data to any third party</li>
-      <li>Not using the API to access data beyond the authorized scopes</li>
+      <li>Requesting only the minimum scopes necessary for the app's functionality</li>
+      <li>Not using the API to access data beyond the authorised scopes</li>
       <li>Complying with all rate limits and technical constraints imposed by TikTok</li>
       <li>Promptly addressing any compliance concerns raised by TikTok</li>
     </ul>
   </section>
 
-  <!-- 6 -->
-  <section>
-    <p class="section-number">06</p>
-    <h2>Privacy Policy</h2>
-    <p>
-      <strong>No personal data is collected.</strong> The App does not collect any information about individual TikTok users — including but not limited to names, usernames, profile pictures, email addresses, device identifiers, IP addresses, or behavioral data.
-    </p>
-    <p>
-      The only account-level data accessed is associated with our own organization's TikTok profile, authenticated via TikTok's official OAuth 2.0 flow. Access tokens obtained through this process are stored securely and never shared externally.
-    </p>
-    <p>
-      We do not use cookies, tracking pixels, or any third-party analytics services within the App.
-    </p>
-    <!-- FIX #9 / cohérence: GDPR response time also mentioned in ToS -->
-    <p>
-      If you believe we hold any information related to you and wish to exercise your rights under applicable data protection laws (including GDPR for EU residents), please contact us at the address below. We will respond to all legitimate requests within 30 days.
-    </p>
-  </section>
-
-  <!-- 7 -->
   <section>
     <p class="section-number">07</p>
-    <h2>Security</h2>
-    <p>
-      We implement appropriate technical and organizational measures to protect the data retrieved via the TikTok API, including:
-    </p>
-    <ul>
-      <li>Secure storage of API credentials and access tokens</li>
-      <li>Restricted access to the App and its data (authorized team members only)</li>
-      <li>Use of HTTPS for all API communications</li>
-    </ul>
-    <!-- FIX #8 (ToS): Aligned breach notification with PP -->
-    <p>
-      In the event of a security incident or data breach affecting TikTok-related data, we will take immediate corrective action, notify TikTok as required under the TikTok API Developer Terms of Service, and inform any affected parties in accordance with applicable data protection regulations (including GDPR where applicable) within 72 hours of becoming aware of the breach.
-    </p>
+    <h2>Privacy</h2>
+    <p>Your use of the App is also governed by our <a href="https://electro-news.eu/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>, which is incorporated into these Terms by reference. The Privacy Policy explains in detail what data we collect, how we use it, and your rights as a user.</p>
+    <p>The only account-level credentials accessed are your OAuth 2.0 tokens, which are stored securely and never shared externally. We do not use cookies beyond essential session management, and we do not use any third-party tracking or advertising services.</p>
+    <p>If you believe we hold any information related to you and wish to exercise your rights under applicable data protection law (including GDPR for EU residents), please contact us. We will respond within 30 days.</p>
   </section>
 
-  <!-- 8 -->
   <section>
     <p class="section-number">08</p>
-    <h2>Limitation of Liability</h2>
-    <p>
-      This App is provided "as is." We make no warranties, express or implied, regarding the accuracy or completeness of data retrieved from TikTok. We are not liable for any disruption to the App caused by changes to TikTok's API or policies.
-    </p>
+    <h2>Security</h2>
+    <p>We implement appropriate technical and organisational measures to protect your data, including:</p>
+    <ul>
+      <li>Encrypted storage of API credentials and access tokens</li>
+      <li>Restricted access to production systems (authorised team members only)</li>
+      <li>All API communications conducted over HTTPS</li>
+    </ul>
+    <p>In the event of a security incident affecting your data, we will take immediate corrective action, notify TikTok as required under the TikTok API Developer Terms of Service, and inform affected users within 72 hours of becoming aware of the breach.</p>
   </section>
 
-  <!-- 9 -->
   <section>
     <p class="section-number">09</p>
-    <h2>Changes to These Terms</h2>
-    <p>
-      We reserve the right to update these Terms at any time. The effective date and version number at the top of this page will reflect the most recent revision. Continued use of the App following any changes constitutes acceptance of the updated Terms.
-    </p>
+    <h2>Limitation of Liability</h2>
+    <p>The App is provided "as is." We make no warranties, express or implied, regarding the accuracy or completeness of data retrieved from TikTok. We are not liable for any disruption to the App caused by changes to TikTok's API or policies, or for any indirect or consequential damages arising from use of the App.</p>
   </section>
 
-  <!-- 10 -->
   <section>
     <p class="section-number">10</p>
+    <h2>Termination</h2>
+    <p>You may stop using the App and request deletion of your account at any time by contacting us. We reserve the right to suspend or terminate access to the App for users who violate these Terms or applicable law.</p>
+  </section>
+
+  <section>
+    <p class="section-number">11</p>
+    <h2>Changes to These Terms</h2>
+    <p>We reserve the right to update these Terms at any time. The effective date and version number at the top of this page will reflect the most recent revision. For material changes, we will notify registered users by email where possible. Continued use of the App following any update constitutes acceptance of the revised Terms.</p>
+  </section>
+
+  <section>
+    <p class="section-number">12</p>
     <h2>Contact</h2>
-    <p>For any questions regarding these Terms or the App's data practices, please contact us:</p>
+    <p>For any questions regarding these Terms or the App's data practices:</p>
     <div class="contact-box">
-      <!-- FIX #3: Added public website in contact block -->
       <p>Website</p>
       <a href="https://electro-news.eu" target="_blank" rel="noopener">https://electro-news.eu</a>
       <p style="margin-top:1rem;">Email</p>
@@ -374,7 +162,6 @@
 </main>
 
 <footer>
-  <!-- FIX #1: Unified app name -->
   © 2026 &nbsp;·&nbsp; electro-news-insights &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp;
   <a href="https://electro-news.eu" target="_blank" rel="noopener" style="color:inherit;">electro-news.eu</a>
 </footer>
